@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <form id="registr">
+                    <div class="form-group">
+                        <label for="name">Adinizi daxil edin:</label>
+                        <input type="text" class="form-control required" data-msg="Zehmet olmasa adinizi daxil edin"
+                            id="name" autocomplete="off">
+                            <!-- <p class="text-danger">This text represents a warning.</p> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surname">Soyadinizi daxil edin:</label>
+                        <input type="text" class="form-control required" data-msg="Zehmet olmasa soyadinizi daxil edin"
+                            id="surname" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pass">Sifrenizi daxil edin:</label>
+                        <input type="password" class="form-control required simvol"
+                            data-msg="Zehmet olmasa sifrenizi daxil edin" data-simvol="6 simvoldan az olmamalidir" id="pass" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm">Sifrenizi tesdiq edin:</label>
+                        <input type="password" class="form-control required simvol"
+                            data-msg="Zehmet olmasa sifrenizi birdaha daxil edin" data-simvol="6 simvoldan az olmamalidir" id="confirm" autocomplete="off">
+                    </div>
+
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
